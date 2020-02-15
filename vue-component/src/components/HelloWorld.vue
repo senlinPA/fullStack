@@ -9,8 +9,13 @@
           <KInput type='password' v-model='model.pass' placeholder='请输入密码'></KInput>
       </KFormItem>
     </KForm>
-    <button @click="submit">提交</button>
-    
+
+    <button @click="submit">提交</button>&emsp;
+    <br/>
+    <krouteLink to='/home'>主页</krouteLink>&emsp;&emsp;
+    <krouteLink to='/info'>信息页</krouteLink>
+    <hr/>>
+    <krouteView></krouteView>  
   </div>
 </template>
 
@@ -18,12 +23,16 @@
 import KInput from './KInput'
 import KFormItem from './KFormItem'
 import KForm from './KForm'
+import krouteLink from '../router/kroute-link'
+import krouteView from '../router/kroute-view'
 export default {
   name: 'HelloWorld',
   components:{
     KInput,
     KFormItem,
-    KForm
+    KForm,
+    krouteLink,
+    krouteView
   },
   props: {
     msg: String
