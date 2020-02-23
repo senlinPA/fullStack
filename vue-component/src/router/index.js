@@ -11,11 +11,11 @@ export default new Router({
         component: resolve => require(['@/components/HelloWorld'],resolve),
     },{
         path:'/home',
-        name:'首页',
+        name:'主页',
         component: resolve => require(['@/components/index'],resolve),
     },{
         path:'/info',
-        name:'首页',
+        name:'信息页',
         component: resolve => require(['@/components/info'],resolve),
     }]
 });

@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <kroute-link to='/'>主页</kroute-link>&emsp;&emsp;
+    <kroute-link to='/info'>信息页</kroute-link>
+    <hr/>
+    <kroute-view></kroute-view>  
   </div>
 </template>
 

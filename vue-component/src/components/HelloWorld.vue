@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-
+    <img alt="Vue logo" src="../assets/logo.png">
     <KForm :model="model" :rules="rules" ref="loginForm">
       <KFormItem label="用户名" prop="name">
         <KInput v-model='model.name' placeholder='请输入用户名'></KInput>
@@ -12,10 +12,7 @@
 
     <button @click="submit">提交</button>&emsp;
     <br/>
-    <krouteLink to='/home'>主页</krouteLink>&emsp;&emsp;
-    <krouteLink to='/info'>信息页</krouteLink>
-    <hr/>>
-    <krouteView></krouteView>  
+   
   </div>
 </template>
 
@@ -23,16 +20,12 @@
 import KInput from './KInput'
 import KFormItem from './KFormItem'
 import KForm from './KForm'
-import krouteLink from '../router/kroute-link'
-import krouteView from '../router/kroute-view'
 export default {
   name: 'HelloWorld',
   components:{
     KInput,
     KFormItem,
     KForm,
-    krouteLink,
-    krouteView
   },
   props: {
     msg: String
@@ -61,8 +54,6 @@ export default {
           } else {
             console.log('error submit!!');
             return false;
-
-            
           }
       })
     }
@@ -75,7 +66,7 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
-ul {
+ul {  
   list-style-type: none;
   padding: 0;
 }
